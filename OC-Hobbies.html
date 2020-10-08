@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAnny's Hobbies</title>
+    <link rel="stylesheet" href="OC-Hobbies.css">
+</head>
+<body>
+    <h1>Rock climbing</h1>
+    <p>
+        Believe it or not, but one of my Hobbies are actually not team based. Rock climbing has 
+        alwys been so exciting for me. I take it so seriously that I even have a website to show
+        me the weather so I could decide if I should climb or not. It is the pollygon weather 
+        branch for current weather app.
+        
+    </p>
+    <div class="input">
+        <input type="text" class="InputV" placeholder="Enter a city">
+        <input type="submit" value="Submit" class="button">
+    </div>
+
+    <div class="display">
+        <h1 class="name"></h1>
+        <p class="wind"></p>
+        <p class="temp"></p>
+    </div>
+    <script src="OC-Hobbies.js"></script>
+    <p>Using this I can easily see what the wind and temperature will be in my city and if it is optimal for rock climbing.</p>
+    
+    <h1>Book reading</h1>
+    <p>
+        One of my hobbies that I had as a small kid was diving nose first into a good book or comic. My reading speed was never below average and
+        it helped me through varsity.
+    </p>
+    <h1>Adventuring</h1>
+    <p>I am a man for adventure. I cannot sit still no matter how what anyone says. I always have that drive to do more and be more.</p>
+    <script>
+        if('Notification' in window){
+            if(Notification.permission !== "denied"){
+                let title = "The title";
+                let options = {
+                    body:'This is how I use my notification API'
+                }
+                let notif= new Notification(title,options);
+
+            }else{
+                Notification.requestPermission()
+                .then(function(result){
+                    console.log(result);
+                })
+                .catch( (err) => {
+                    console.log(err);
+                });
+            }
+        }
+      
+    </script>
+    <h2><a href="Online-CV.html"style="color:Yellow">Return to main page</a></h2>
+</body>
+</html>
