@@ -1,0 +1,13 @@
+body {
+    font-family: 'Bangers', cursive;
+    border: 4px dashed grey;
+    margin-left: 14%;
+    padding: 50px;
+    width: 70%;
+    margin-top: 100px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmDswfcvGOSwFm4qIt6P7WezDZwQz4pVkfb6-PLQeaOdS7ELk9&usqp=CAU);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    color: aliceblue;
+
+}
